@@ -1,0 +1,100 @@
+/* Align Itmes to left */
+
+#what .items {
+	display: block;
+	padding: 1rem;
+	justify-content: space-between;
+}
+
+#what .items .item {
+	display: flex;
+	text-align: left;
+	border-bottom: 1px #333 solid;
+}
+
+#what .items .item i {
+	align-self: center;
+	margin-right: 1.3rem;
+	margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+	#navbar {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#navbar .logo {
+		padding: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	#navbar .items {
+		padding: 0.5rem;
+	}
+
+	#what .items {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+	#what .items .item {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#what .items .item i {
+		margin-bottom: 1.5rem;
+	}
+
+	#who {
+		display: block;
+	}
+
+	#who .who-img {
+		display: none;
+	}
+
+	#who .who-text {
+		text-align: justify;
+	}
+
+	#clients .items {
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+
+	#clients .items div img {
+		width: 20vw;
+		padding: 0.5rem;
+	}
+
+	#contact {
+		/* flex-direction: column;
+        flex-wrap: wrap; */
+		display: block;
+	}
+
+	#contact .contact-form .btn {
+		width: 80vw;
+	}
+
+	#contact .map {
+		height: 50vh;
+	}
+
+	#main-footer {
+		font-size: 0.75rem;
+	}
+}
+
+@media (max-width: 320px) {
+	#showcase .l-heading {
+		font-size: 2.8rem;
+	}
+
+	#showcase .lead {
+		font-size: 1rem;
+	}
+}
